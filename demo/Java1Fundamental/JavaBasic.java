@@ -3,7 +3,7 @@ public class JavaBasic{
     // methods
     public static void main(String[] args){
         System.out.println("Hello Java");
-        // 1. compile java (javac & java)
+        // 1. compile java (javac JavaBasic.java   & java JavaBasic)
 
         // ------------- First Java Program ------------
 
@@ -45,7 +45,7 @@ public class JavaBasic{
         System.out.println(greeting);
         System.out.printf("Hi %s, you are %d years old \n", name, age );
 
-        // creating a string
+        // comparing strings
         String firstName1 = "Martha";    
         String firstName2 = new String("Martha");      // memory location
         String firstName3 = "Martha";  
@@ -64,13 +64,7 @@ public class JavaBasic{
 
 
 
-// 8. Fixed Array
 
-
-// 9. ArrayList
-
-
-// 10. For-loop & enhanced for-loop
 
 
 // -------------- Cafe Business Logic --------------
