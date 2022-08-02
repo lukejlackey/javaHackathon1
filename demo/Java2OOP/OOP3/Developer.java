@@ -8,6 +8,10 @@ public class Developer{
     private int salary;
     private double hoursOfSleep;
 
+    private static int devCount; // static : referring to the class, not instance
+    private static int totalIncome; // store all the beginning salary
+    private static int totalProjects;
+
        //  ---------- constructors -------------
     public Developer(){
         this.name= "Anonymous Devloper";
@@ -15,6 +19,8 @@ public class Developer{
         this.projects = new ArrayList<Project>();
         this.salary = 90000;
         this.hoursOfSleep = 4;
+        devCount++;
+        totalIncome += this.salary; 
     }
 
     public Developer(String name, int salary, double hoursOfSleep){
@@ -23,6 +29,8 @@ public class Developer{
         this.projects = new ArrayList<Project>();
         this.salary = salary;
         this.hoursOfSleep = hoursOfSleep;
+        devCount++;
+        totalIncome += this.salary; 
     }
 
 
@@ -44,6 +52,7 @@ public class Developer{
 
     public void addProject(Project proj){
         this.projects.add(proj);
+        totalProjects++;
     }
 
     //  ---------- getters & setters -------------
@@ -95,6 +104,19 @@ public class Developer{
     // setter: no return, with parameters
     public void setProjects(ArrayList<Project> projects){
         this.projects = projects;
+    }
+
+
+    public static int getDevCount(){
+        return devCount;
+    }
+
+    public static int getTotalIncome(){
+        return totalIncome;
+    }
+
+    public static int getTotalProjects(){
+        return totalProjects;
     }
 
 

@@ -15,7 +15,12 @@ public class DeveloperTest{
 
         Developer dev2 = new Developer();
         dev2.displayStatus();
+        // dev1, dev2: instances created using the blueprint
+        // Developer: class
 
+        System.out.println("Devloper count:  "+ Developer.getDevCount());
+        System.out.println("Total income:  $"+ Developer.getTotalIncome() );
+        System.out.println("Total projects:  "+ Developer.getTotalProjects() );
 
 
     }
